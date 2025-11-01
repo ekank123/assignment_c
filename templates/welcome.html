@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <h2>Welcome, {{ current_user.username }}!</h2>
+    <p>You have successfully logged in.</p>
+    
+    {% if current_user.has_role('admin') %}
+        <p>As an admin, you can <a href="{{ url_for('admin_dashboard') }}">manage users</a>.</p>
+    {% else %}
+        <p>You are logged in as a student.</p>
+    {% endif %}
+{% endblock %}
