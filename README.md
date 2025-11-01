@@ -98,7 +98,7 @@ http://127.0.0.1:5000
 - `requirements.txt`: List of Python dependencies
 
 ## Contributors
-- [Your Name/Team Member Names]
+- Ekank Awasthi
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
